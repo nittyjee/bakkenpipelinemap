@@ -1,0 +1,103 @@
+<html>
+<head>
+  <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.12/themes/css/cartodb.css" />
+  <script src="http://libs.cartocdn.com/cartodb.js/v3/3.12/cartodb.js"></script>
+  <style>
+    html, body {width:100%; height:100%; padding: 0; margin: 0;}
+    #map { width: 100%; height:100%; background: black;}
+    #menu { position: absolute; top: 5px; right: 10px; width: 400px; height:60px; background: transparent; z-index:10;}
+    #menu a { 
+      margin: 15px 10px 0 0;
+      float: right;
+      vertical-align: baseline;
+      width: 70px;
+      padding: 10px;
+      text-align: center;
+      font: bold 11px "Helvetica",Arial;
+      line-height: normal;
+      color: #555;
+      border-radius: 4px;
+      border: 1px solid #777777;
+      background: #ffffff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    #menu a.selected,
+    #menu a:hover { 
+      color: #F84F40;
+    }
+  </style>
+
+  <script>
+  var map;
+  
+// credit: http://html5doctor.com/finding-your-position-with-geolocation/
+function detectUserLocation(){
+  if (navigator.geolocation) {
+    var timeoutVal = 10 * 1000 * 1000;
+    navigator.geolocation.watchPosition(
+      mapToPosition, 
+      alertError,
+      { enableHighAccuracy: true, timeout: timeoutVal, maximumAge: 0 }
+    );
+  }
+  else {
+    alert("Geolocation is not supported by this browser");
+  }
+
+  function alertError(error) {
+    var errors = { 
+      1: 'Permission denied',
+      2: 'Position unavailable',
+      3: 'Request timeout'
+    };
+    alert("Error: " + errors[error.code]);
+  }
+}
+  
+  function mapToPosition(position) {
+  lon = position.coords.longitude;
+  lat = position.coords.latitude;
+  map.setView(new L.LatLng(lat,lon), 7);
+  new L.CircleMarker([lat,lon],{radius: 4}).addTo(map);
+}
+
+  function init(){
+    // initiate leaflet map
+    map = new L.Map('map', { 
+      center: [20,-20],
+      zoom: 3
+//      center: [42.1,-93.6],
+//      zoom: 8
+    })
+
+    L.tileLayer('https://dnv9my2eseobd.cloudfront.net/v3/cartodb.map-4xtxp73f/{z}/{x}/{y}.png', {
+      attribution: 'Mapbox <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
+    }).addTo(map);
+	var layerUrl = 'https://nittyjee.carto.com/api/v2/viz/6c459170-8476-11e6-af6f-0e05a8b3e3d7/viz.json';
+
+var sublayers = [];
+
+cartodb.createLayer(map, layerUrl)
+  .addTo(map)
+  .on('done', function(layer) {
+    detectUserLocation();
+  }).on('error', function() {
+    //log the error
+  });
+  
+}
+  </script>
+  
+
+
+
+
+
+  
+</head>
+
+<body onload="init()">
+  <div id='map'></div>
+</body>
+</html>
