@@ -58,17 +58,17 @@ function detectUserLocation(){
   function mapToPosition(position) {
   lon = position.coords.longitude;
   lat = position.coords.latitude;
-  map.setView(new L.LatLng(lat,lon), 7);
+  //map.setView(new L.LatLng(lat,lon), 7);
   new L.CircleMarker([lat,lon],{radius: 4}).addTo(map);
 }
 
   function init(){
     // initiate leaflet map
     map = new L.Map('map', { 
-      center: [20,-20],
-      zoom: 3
-//      center: [42.1,-93.6],
-//      zoom: 8
+//      center: [20,-20],
+//      zoom: 3
+      center: [42.1,-93.6],
+      zoom: 8
     })
 
     L.tileLayer('https://dnv9my2eseobd.cloudfront.net/v3/cartodb.map-4xtxp73f/{z}/{x}/{y}.png', {
