@@ -55,37 +55,41 @@ function detectUserLocation(){
   }
 }
   
-  function mapToPosition(position) {
+function mapToPosition(position) {
   lon = position.coords.longitude;
   lat = position.coords.latitude;
   //map.setView(new L.LatLng(lat,lon), 7);
   new L.CircleMarker([lat,lon],{radius: 4}).addTo(map);
 }
 
-  function init(){
-    // initiate leaflet map
-    map = new L.Map('map', { 
-//      center: [20,-20],
-//      zoom: 3
-      center: [42.1,-93.6],
-      zoom: 8
-    })
+function init(){
+  var zoom = 6;
+  var mapWidth = $("#map").width()
+  if(mapWidth < 800){
+    zoom = 5;
+  }
+  // initiate leaflet map
+  map = new L.Map('map', { 
+  //      center: [20,-20],
+  //      zoom: 3
+    center: [43.5446,-96.7311],
+    zoom: zoom
+  })
 
-    L.tileLayer('https://dnv9my2eseobd.cloudfront.net/v3/cartodb.map-4xtxp73f/{z}/{x}/{y}.png', {
-      attribution: 'Mapbox <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
-    }).addTo(map);
-	var layerUrl = 'https://nittyjee.carto.com/api/v2/viz/6c459170-8476-11e6-af6f-0e05a8b3e3d7/viz.json';
+  L.tileLayer('https://dnv9my2eseobd.cloudfront.net/v3/cartodb.map-4xtxp73f/{z}/{x}/{y}.png', {
+    attribution: 'Mapbox <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
+  }).addTo(map);
+  var layerUrl = 'https://nittyjee.carto.com/api/v2/viz/6c459170-8476-11e6-af6f-0e05a8b3e3d7/viz.json';
 
-var sublayers = [];
+  var sublayers = [];
 
-cartodb.createLayer(map, layerUrl)
-  .addTo(map)
-  .on('done', function(layer) {
-    detectUserLocation();
-  }).on('error', function() {
-    //log the error
-  });
-  
+  cartodb.createLayer(map, layerUrl)
+    .addTo(map)
+    .on('done', function(layer) {
+      detectUserLocation();
+    }).on('error', function() {
+      //log the error
+    });
 }
   </script>
   
