@@ -76,9 +76,31 @@ function init(){
     zoom: zoom
   })
 
-  L.tileLayer('https://dnv9my2eseobd.cloudfront.net/v3/cartodb.map-4xtxp73f/{z}/{x}/{y}.png', {
-    attribution: 'Mapbox <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
+
+// L.tileLayer('http://{s}.{base}.maps.cit.api.here.com/maptile/2.1/{type}/{mapID}/hybrid.day/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}', {
+//   attribution: 'Map &copy; 1987-2014 <a href="http://developer.here.com">HERE</a>',
+//   subdomains: '1234',
+//   mapID: 'newest',
+//   app_id: '<your app_id>',
+//   app_code: '<your app_code>',
+//   base: 'aerial',
+//   maxZoom: 20,
+//   type: 'maptile',
+//   language: 'eng',
+//   format: 'png8',
+//   size: '256'
+// }).addTo(map);
+
+
+  L.tileLayer('https://{s}.maps.nlp.nokia.com/maptile/2.1/maptile/newest/hybrid.day/{z}/{x}/{y}/256/png8?lg=eng&token=A7tBPacePg9Mj_zghvKt9Q&app_id=KuYppsdXZznpffJsKT24', {
+    attribution: 'Mapbox <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>',
+    subdomains: '1234'
   }).addTo(map);
+
+  // L.tileLayer('https://dnv9my2eseobd.cloudfront.net/v3/cartodb.map-4xtxp73f/{z}/{x}/{y}.png', {
+  //   attribution: 'Mapbox <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
+  // }).addTo(map);
+
   var layerUrl = 'https://nittyjee.carto.com/api/v2/viz/6c459170-8476-11e6-af6f-0e05a8b3e3d7/viz.json';
 
   var sublayers = [];
