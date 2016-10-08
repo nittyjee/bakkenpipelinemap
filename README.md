@@ -9,7 +9,7 @@ It contains the original sources of data, and the data that has been generated.
 
 ##Sources
 ###Iowa
-- Construction maps are updated weekly. Most recent update
+- Construction maps are updated weekly. Most recent update:
 https://efs.iowa.gov/cs/groups/external/documents/docket/mdax/nja1/~edisp/1605928.pdf
 
 - Properties crossing and eminent domain
