@@ -1,1 +1,25 @@
-Will add overview soon.
+# Data Overview
+
+Data uploaded is in shapefile format.
+
+This is the current (as of 10/12/2016) pipeline map, with codes for construction progress:
+- Whole_Pipeline_Part_Rough_5
+-- Drawn using weekly construction maps made available by Dakota Access to the Iowa Utilities Board (IUB)
+
+These are the properties in Iowa:
+- First_Merge
+-- Drawn using maps made available by Dakota Access to the Iowa Utilities Board (IUB)
+- properties_lawsuits_points
+
+Pumping facilities in North Dakota:
+- Facility Points: 
+- North Dakota Facilities: 
+-- Drawn using maps made available by Dakota Access to the North Dakota Public Service Commission (PSC)
+
+Easement and Right of way:
+- Easement_50_ft_3
+- right_of_way_150_ft_3
+
+Standing Rock Reservation:
+- Standing_Rock_Reservation_Full
+-- from USGS Protected Areas Database: http://gapanalysis.usgs.gov/padus/data/
