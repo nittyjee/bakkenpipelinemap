@@ -26,6 +26,10 @@ http://www.daplpipelinefacts.com/docs-dapl/DAPL_Illinois_Maps_021815.pdf
 ###South Dakota
 https://puc.sd.gov/commission/dockets/HydrocarbonPipeline/2014/HP14-002/routemap.pdf
 
+###Camps, Construction Extent, Bulldozed sites
+From Carl Sack, cartographer at UW Madison, who made the following map:
+http://www.huffingtonpost.com/entry/a-nodapl-map_us_581a0623e4b014443087af35
+
 ##Overview, directions for mapping effort
 
 Application:
