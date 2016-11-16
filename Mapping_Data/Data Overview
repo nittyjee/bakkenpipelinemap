@@ -15,7 +15,7 @@ These are the properties in Iowa:
 - properties_lawsuits_points
 
 Pumping facilities in North Dakota:
-- Facility Points: 
+- Facility Points
 - North Dakota Facilities: 
 -- Drawn using maps made available by Dakota Access to the North Dakota Public Service Commission (PSC)
 
@@ -26,3 +26,9 @@ Easement and Right of way:
 Standing Rock Reservation:
 - Standing_Rock_Reservation_Full
 -- from USGS Protected Areas Database: http://gapanalysis.usgs.gov/padus/data/
+
+Because CartoDB only allows 8 layers, some layers had to be merged (some are repeats of other data):
+- Multiple_Points_Layer
+-- Camps, Construction Extent on Sept 3, Facilities (REPEAT), Hydrostatic Testing Locations
+- Multiple_Shapes_Layer
+-- Facility Points (REPEAT), Archaeological sites bulldozed Sept 3.
