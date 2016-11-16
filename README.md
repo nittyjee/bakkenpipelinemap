@@ -15,6 +15,9 @@ https://efs.iowa.gov/cs/groups/external/documents/docket/mdax/nja1/~edisp/160592
 - Properties crossing and eminent domain
 https://docs.google.com/spreadsheets/d/1FQDZyXUjJI8vONK2GPf3ARhnEFpTIxobHoSmF2LEBmI/edit#gid=0
 
+- Propery owners in lawsuit with Dakota Access (updated weekly):
+https://efs.iowa.gov/cs/groups/external/documents/docket/mdax/nja1/~edisp/1605929.pdf   
+
 Note: Story, Boone, Polk, and Keokuk counties used GIS data from the county asessors.
 
 ###North Dakota
