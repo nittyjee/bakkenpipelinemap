@@ -2,8 +2,11 @@
 
 Data uploaded is in shapefile format.
 
-This is the current (as of 10/12/2016) pipeline map, with codes for construction progress:
-- Whole_Pipeline_Part_Rough_5
+The whole pipeline:
+- Whole_Pipeline.zip
+
+All construction progress in Iowa is in the folder:
+- Pipeline_Construction_Progress
 -- Drawn using weekly construction maps made available by Dakota Access to the Iowa Utilities Board (IUB)
 
 These are the properties in Iowa:
