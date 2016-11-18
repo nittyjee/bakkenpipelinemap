@@ -12,7 +12,7 @@ It contains the original sources of data, and the data that has been generated.
 - The pipeline has been mostly constructed in all states. Construction progress is only known in Iowa, and is updated weekly. Here is one mapping document, all of which are available through the Iowa Utilities Board (IUB):
 https://efs.iowa.gov/cs/groups/external/documents/docket/mdax/nja1/~edisp/1605928.pdf
 
--- A report claiming that the pipeline is mostly complete in other states. The status has not changed since; Dakota Access has not claimed it to be complete in any state:
+-- A report claiming that the pipeline is mostly complete in other states. As of 11/18/2016, the status has not changed; Dakota Access has not claimed it to be complete in any state:
 http://iowacci.org/in-the-news/midwest-mobilizes-demand-obama-stop-dakota-access-pipeline/
 
 - Properties crossing and eminent domain
