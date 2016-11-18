@@ -15,7 +15,9 @@ https://efs.iowa.gov/cs/groups/external/documents/docket/mdax/nja1/~edisp/160592
 - Properties crossing and eminent domain
 https://docs.google.com/spreadsheets/d/1FQDZyXUjJI8vONK2GPf3ARhnEFpTIxobHoSmF2LEBmI/edit#gid=0
 
-- Propery owners in lawsuit with Dakota Access (updated weekly):
+- Propery owners in lawsuit with Dakota Access. These are included in the map of properties.
+There were 17 landowners involved in the lawsuit at the time of this document, who owned 46 properties.
+The data was produced once from this document, and a new document is produced every week for the IUB:
 https://efs.iowa.gov/cs/groups/external/documents/docket/mdax/nja1/~edisp/1605929.pdf   
 
 Note: Story, Boone, Polk, and Keokuk counties used GIS data from the county asessors.
