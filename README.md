@@ -39,7 +39,7 @@ From Carl Sack, cartographer at UW Madison, who made the following map:
 
 http://www.huffingtonpost.com/entry/a-nodapl-map_us_581a0623e4b014443087af35
 
-##Overview, directions for mapping effort
+## Overview, directions for mapping effort
 
 Application:
 https://docs.google.com/document/d/1vaIaVomiT2icgW5RqV83wUp02APoJ_oyV7ggdFRpK8k/edit
